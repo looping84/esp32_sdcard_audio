@@ -1,6 +1,6 @@
 #include <Arduino.h>
 #include <stdio.h>
-#include <FreeRTOS.h>
+#include <freertos/FreeRTOS.h>
 #include <I2SMEMSSampler.h>
 #include <ADCSampler.h>
 #include <I2SOutput.h>
@@ -10,6 +10,7 @@
 #include <WAVFileReader.h>
 #include <WAVFileWriter.h>
 #include "config.h"
+#include "esp_log.h"
 
 void wait_for_button_push()
 {

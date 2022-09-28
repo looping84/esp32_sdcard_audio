@@ -19,24 +19,31 @@
 // Generally they will default to LEFT - but you may need to attach the L/R pin to GND
 #define I2S_MIC_CHANNEL I2S_CHANNEL_FMT_ONLY_LEFT
 // #define I2S_MIC_CHANNEL I2S_CHANNEL_FMT_ONLY_RIGHT
-#define I2S_MIC_SERIAL_CLOCK GPIO_NUM_26
-#define I2S_MIC_LEFT_RIGHT_CLOCK GPIO_NUM_22
-#define I2S_MIC_SERIAL_DATA GPIO_NUM_21
+// #define I2S_WS 16
+// #define I2S_SD 32
+// #define I2S_SCK 25
+#define I2S_MIC_SERIAL_CLOCK GPIO_NUM_25
+#define I2S_MIC_LEFT_RIGHT_CLOCK GPIO_NUM_16
+#define I2S_MIC_SERIAL_DATA GPIO_NUM_32
 
 // Analog Microphone Settings - ADC1_CHANNEL_7 is GPIO35
 #define ADC_MIC_CHANNEL ADC1_CHANNEL_7
 
 // speaker settings
-#define I2S_SPEAKER_SERIAL_CLOCK GPIO_NUM_19
-#define I2S_SPEAKER_LEFT_RIGHT_CLOCK GPIO_NUM_27
-#define I2S_SPEAKER_SERIAL_DATA GPIO_NUM_18
+// I2S Connections
+// #define I2S_DOUT      33
+// #define I2S_BCLK      4
+// #define I2S_LRC       17
+#define I2S_SPEAKER_SERIAL_CLOCK GPIO_NUM_4
+#define I2S_SPEAKER_LEFT_RIGHT_CLOCK GPIO_NUM_16
+#define I2S_SPEAKER_SERIAL_DATA GPIO_NUM_17
 
 // record button
-#define GPIO_BUTTON GPIO_NUM_13
+#define GPIO_BUTTON GPIO_NUM_12
 
 // sdcard
 #define PIN_NUM_MISO GPIO_NUM_19
-#define PIN_NUM_CLK GPIO_NUM_28
+#define PIN_NUM_CLK GPIO_NUM_18
 #define PIN_NUM_MOSI GPIO_NUM_23
 #define PIN_NUM_CS GPIO_NUM_5
 
